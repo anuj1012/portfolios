@@ -21,16 +21,7 @@
     </head>
 
     <body class="overflow-x-hidden font-Outfit  bg-gradient-to-r from-[#694A38] to-[#F4AC45]">
-        <div
-            class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]"
-        >
-            <img
-                src=""
-                alt=""
-                class="w-full"
-            />
-        </div>
-
+    
         <nav
             id="nav"
             class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
@@ -106,23 +97,29 @@
         </nav>
 
         <!-- Header section -->
-        <div class="w-11/12 max-w-3xl mx-auto h-screen flex flex-col items-center justify-center gap-4 px-4">
+        <div
+            class="w-12/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
+        >
             <img
                 src="./images/profile-removebg-preview.png"
                 alt=""
-                class="rounded-full w-32 md:w-40 mb-3"
+                class="rounded-full w-28 mb-1"
             />
 
-            <h3 class="flex items-end gap-2 text-lg md:text-2xl text-center mb-5 text-white">
+            <h3 class="flex items-end gap-2 text-xl md:text-2xl text-center mb-1 text-white">
                 Hi I'm <span class="text-black font-serif">Anuj Shakya</span>
-                <img src="./images/hand-icon.png" class="w-6" />
+                <img
+                    src="./images/hand-icon.png"
+                    alt=""
+                    class="w-6"
+                />
             </h3>
 
-            <h1 class="text-3xl sm:text-4xl md:text-5xl text-white font-serif text-center mb-3">
+            <h1 class="text-3xl sm:text-6xl text-white font-serif lg:text-[66] mb-3">
                 Frontend Web Developer
             </h1>
 
-            <p class="w-full text-base md:text-lg text-center mb-8 text-black font-serif leading-relaxed">Hello! I'm Anuj Shakya, a passionate and dedicated WebDeveloper with a keen eye for detail and a love for
+            <p class="w-full max-w-3xl md:max-w-2xl sm:max-w-xl mx-auto mb-5 text-lg text-black font-serif">                Hello! I'm Anuj Shakya, a passionate and dedicated WebDeveloper with a keen eye for detail and a love for
                 creating <span class="text-white w-full max-w-3xl md:max-w-2xl sm:max-w-xl mx-auto mb-12 text-xl text-black font-serif">
                     webDesign,
                     portfolios,
@@ -145,7 +142,7 @@
                      challenges.
             </p>
 
-            <div class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-sm">
+            <div class="flex flex-col sm:flex-row item-center gap-4 mt-4">
                 <a
                     href="#contact"
                     class="px-10 py-3 hover:border rounded-full border-white bg-gradient-to-r from-[#50514F] to-[#C3B299] text-white flex items-center gap-2 "
@@ -172,26 +169,27 @@
         </div>
 
         <!-- About me -->
-        <div 
-        id="about" 
-        class="w-full px-4 md:px-12% py-10 scroll-mt-20">
-            <div
-             class="flex flex-col lg:flex-row items-center gap-8 my-10">
-                <div 
-                class="w-full lg:w-1/3">
+        <div
+            id="about"
+            class="w-full px-[12%] py-10 scroll-mt-20"
+        >
+            <h4 class="text-center font-mono font-bold text-white mb-2 text-lg">Introduction</h4>
+            <h2 class="text-center font-serif text-bold text-5xl">About me</h2>
+
+            <div class="flex w-rull flex-col lg:flex-row items-center gap-20 my-20">
+                <div>
                     <img
                         src="./images/IMG_E6095.JPG"
                         alt=""
-                        class="w-64 h-64 sm:w-80 sm:h-80 rounded-3xl mx-auto object-cover"
+                        class="w-64 sm:w-80 rounded-3xl max-w-none"
                     />
                 </div>
-                <div class="w-full lg:w-2/3">
-                    <p class="text-base md:text-lg text-[#100007] font-serif mb-8">
-                        As a passionate and driven fresher in web development, I bring a solid foundation in modern technologies like<span class="text-[#DDF2EB]">React, Redux, Tailwind CSS, Bootstrap, and core web development tools (HTML, CSS, JavaScript).</span>  My hands-on experience includes building interactive projects like a ppy Bird game using vanilla JavaScript, a responsive portfolio website with Tailwind CSS, and a dynamic TodoList application showcasing state management and CRUD operations. Alongside frontend expertise, I’m proficient in Java and well-versed in <span class="text-white">Data Structures & Algorithms </span>, ensuring efficient problem-solving and clean code practices. My Linux skills further enhance my adaptability to diverse development environments. Eager to learn and innovate, I thrive on transforming ideas into functional, user-centric solutions while continuously expanding my technical horizons. Let’s create something impactful together!
+                <div class="flex-1">
+                    <p class="mb-10 max-w-2xl text-lg font-serif  text-[#100007]">
+                        As a passionate and driven fresher in web development, I bring a solid foundation in modern technologies like<span class="text-[#DDF2EB]">React, Redux, Tailwind CSS, Bootstrap, and core web development tools (HTML, CSS, JavaScript).</span>  My hands-on experience includes building interactive projects like a ppy Bird game using vanilla JavaScript, a responsive portfolio website with Tailwind CSS, and a dynamic TodoList lication showcasing state management and CRUD operations. Alongside frontend expertise, I’m proficient in Java and well-versed in <span class="text-white">Data Structures & Algorithms </span>, ensuring efficient problem-solving and clean code practices. My Linux skills further enhance my adaptability to diverse development environments. Eager to learn and innovate, I thrive on transforming ideas into functional, user-centric solutions while continuously expanding my technical horizons. Let’s create something impactful together!
                     </p>
 
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-
+                    <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                         <li
                             class="border-[0.5px] mb-5  bg-[#D3D0CB] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration 500 hover:shadow-[4px_4px_0_#000]"
                         >
@@ -286,8 +284,10 @@
         </div>
 
         <!-- Projects -->
-        <div id="projects" class="w-full px-4 md:px-12% py-10 scroll-mt-20">
-
+        <div
+            id="projects"
+            class="w-full px-[12%] py-10 scroll-mt-20"
+        >
             <h4 class="text-center font-bold font-serif mb-2 text-lg">My portfolio</h4>
             <h2 class="text-center font-serif text-white text-5xl">My latest work</h2>
             <p class="text-center font-serif text-lg max-w-4xl mx-auto mt-5 mb-12">
@@ -295,39 +295,32 @@
                 iusto excepturi facere architecto saepe laborum magni, quisquam sunt!
             </p>
 
-            <div class="relative group overflow-hidden rounded-lg h-64">
-
-
-                <div class="relative group overflow-hidden rounded-lg h-64">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
-                         style="background-image: url('./images/flapp.png')">
+            <div
+                class="grid grid-cols-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 justify-center gap-6"
+            >
+                <div
+                    class="aspect-square w-68 bg-[url('./images/flapp.png')] bg-no-repeat bg-cover bg-center rounded-lg text-center justify-center relative cursor-pointer group"
+                >
+                    <div class="w-full mt-28 bg-white">
+                        <button>Flappy Bird</button>
                     </div>
-                    <div class="absolute bottom-0 w-full p-4 bg-black bg-opacity-50 text-white">
-                        <h3 class="text-lg font-semibold">Flappy Bird</h3>
-                    </div>
+                  
                 </div>
               
-               
-
-                <div class="relative group overflow-hidden rounded-lg h-64">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
-                         style="background-image: url('./images/flapp.png')">
-                    </div>
-                    <div class="absolute bottom-0 w-full p-4 bg-black bg-opacity-50 text-white">
-                        <h3 class="text-lg font-semibold">Flappy Bird</h3>
+                <div
+                    class="aspect-square w-68 bg-[url('./images/work-2.png')] bg-no-repeat bg-cover bg-center rounded-lg text-center justify-center relative cursor-pointer group"
+                >
+                    <div class="w-full mt-28 bg-white">
+                        <button>Make your reminder</button>
                     </div>
                 </div>
 
-        
-
-                <div class="relative group overflow-hidden rounded-lg h-64">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
-                         style="background-image: url('./images/flapp.png')">
+                <div
+                    class="aspect-square w-68 bg-[url('./images/work-3.png')] bg-no-repeat bg-cover bg-center rounded-lg text-center justify-center relative cursor-pointer group"
+                >
+                    <div class="w-full mt-28 bg-white">
+                        <button>Portfolio</button>
                     </div>
-                    <div class="absolute bottom-0 w-full p-4 bg-black bg-opacity-50 text-white">
-                        <h3 class="text-lg font-semibold">Flappy Bird</h3>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -409,4 +402,4 @@
 
         <script src="script.js"></script>
     </body>
-</html>
+</html> 
