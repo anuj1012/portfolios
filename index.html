@@ -8,115 +8,199 @@
         <script src="tailwind.config.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ovo&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigiz />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
     </head>
 
-    <body class="overflow-x-hidden font-Outfit  bg-gradient-to-r from-[#694A38] to-[#F4AC45]">
-        <!-- Navigation (unchanged) -->
-        <nav
-            id="nav"
-            class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50"
-        >
-            <!-- Nav content same as before -->
+    <body class="overflow-x-hidden font-Outfit bg-gradient-to-r from-[#694A38] to-[#F4AC45]">
+        <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+            <img src="" alt="" class="w-full" />
+        </div>
+
+        <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-opacity-50 backdrop-blur-sm">
+            <img
+                src="https://logos.textgiraffe.com/logos/logo-name/Anuj-designstyle-boots-m.png"
+                alt="logo"
+                class="w-28 cursor-pointer mr-14"
+            />
+            <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-[#272932] shadow-sm bg-opacity-50 text-white">
+                <li><a class="hover:text-xl hover:font-serif hover:text-gray-500" href="#top">Home</a></li>
+                <li><a class="hover:text-xl hover:font-serif hover:text-gray-500" href="#about">About Me</a></li>
+                <li><a class="hover:text-xl hover:font-serif hover:text-gray-500" href="#projects">Projects</a></li>
+                <li><a class="hover:text-xl hover:font-serif hover:text-gray-500" href="#contact">Contact Me</a></li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <a
+                    href="#contact"
+                    class="hidden lg:flex items-center gap-3 px-6 py-2 sm:px-10 sm:py-2.5 border border-gray-500 rounded-full bg-[#272932] text-white hover:text-xl hover:font-serif hover:text-gray-500"
+                >
+                    Contact
+                    <img src="./images/arrow-icon.png" alt="" class="w-2 h-2" />
+                </a>
+
+                <button class="block md:hidden ml-3" onclick="openMenu()">
+                    <img src="images/menu-black.png" alt="" class="w-6" />
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <ul
+                id="sideMenu"
+                class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 w-64 z-[100] h-screen bg-rose-50 transition-all duration-500"
+            >
+                <div class="absolute right-6 top-6" onclick="closeMenu()">
+                    <img src="./images/close-black.png" class="w-5 cursor-pointer" alt="" />
+                </div>
+                <li><a href="#top" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
+            </ul>
         </nav>
 
-        <!-- Header section (unchanged) -->
-        <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-            <!-- Header content same as before -->
-        </div>
-
-        <!-- About me section (unchanged) -->
-        <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
-            <!-- About content same as before -->
-        </div>
-
-        <!-- Projects section (unchanged) -->
-        <div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
-            <!-- Projects content same as before -->
-        </div>
-
-        <!-- Corrected Contact Section -->
-        <div
-            id="contact"
-            class="w-full px-5 md:px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center"
-        >
-            <h2 class="text-center text-white text-3xl md:text-5xl">Get in touch</h2>
-            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 text-gray-200">
-                Let's connect! Whether you have a project in mind or just want to say hello,
-                I'll do my best to respond within 24 hours.
+        <!-- Header Section -->
+        <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-20">
+            <img
+                src="./images/profile-removebg-preview.png"
+                alt=""
+                class="rounded-full w-32 mb-3"
+            />
+            <h3 class="flex items-end gap-2 text-xl md:text-2xl text-center mb-5 text-white">
+                Hi I'm <span class="text-black font-serif">Anuj Shakya</span>
+                <img src="./images/hand-icon.png" class="w-6" />
+            </h3>
+            <h1 class="text-3xl sm:text-6xl text-white font-serif lg:text-[66] mb-3">
+                Frontend Web Developer
+            </h1>
+            <p class="w-full max-w-3xl mx-auto mb-12 text-base sm:text-xl text-black font-serif px-4">
+                Hello! I'm Anuj Shakya, a passionate web developer with expertise in modern web technologies.
+                My skills include Java, JavaScript, React, and various CSS frameworks. I create responsive,
+                user-friendly web applications and interactive games.
             </p>
+            <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+                <a
+                    href="#contact"
+                    class="px-8 py-2.5 sm:px-10 sm:py-3 rounded-full border-white bg-gradient-to-r from-[#50514F] to-[#C3B299] text-white flex items-center gap-2 text-sm sm:text-base"
+                >
+                    Contact me
+                    <img src="./images/right-arrow-white.png" class="w-4" />
+                </a>
+                <a
+                    href="./images/new_cv_Anuj.pdf"
+                    download
+                    class="px-8 py-2.5 sm:px-10 sm:py-3 rounded-full border-white bg-gradient-to-r from-[#50514F] to-[#C3B299] text-white flex items-center gap-2 text-sm sm:text-base"
+                >
+                    My resume
+                    <img src="./images/download-icon.png" class="w-4" />
+                </a>
+            </div>
+        </div>
 
-            <form action="#" method="POST" class="max-w-2xl mx-auto">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                    <div>
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Your Name"
-                            class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F4AC45]"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Your Email"
-                            class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F4AC45]"
-                            required
-                        />
+        <!-- About Section -->
+        <div id="about" class="w-full px-5 md:px-[12%] py-10 scroll-mt-20">
+            <h4 class="text-center font-mono font-bold text-white mb-2 text-lg">Introduction</h4>
+            <h2 class="text-center font-serif text-bold text-4xl md:text-5xl text-white">About me</h2>
+            <div class="flex flex-col lg:flex-row items-center gap-8 my-12">
+                <div class="w-full lg:w-auto">
+                    <img src="./images/IMG_E6095.JPG" alt="" class="w-64 sm:w-80 rounded-3xl mx-auto" />
+                </div>
+                <div class="flex-1 mt-8 lg:mt-0">
+                    <p class="mb-8 text-base sm:text-lg text-[#100007]">
+                        As a passionate web developer, I specialize in creating responsive websites and interactive 
+                        applications using modern technologies like React, Tailwind CSS, and JavaScript.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Skills items same as before -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="w-full px-5 md:px-[12%] py-10 scroll-mt-20">
+            <h4 class="text-center font-bold font-serif mb-2 text-lg text-white">My portfolio</h4>
+            <h2 class="text-center font-serif text-4xl md:text-5xl text-white">My latest work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
+                <!-- Project cards with hover effects -->
+                <div class="relative group overflow-hidden rounded-lg cursor-pointer">
+                    <img src="./images/flapp.png" alt="Flappy Bird" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-4 transition-opacity duration-300">
+                        <h3 class="text-xl font-semibold">Flappy Bird Game</h3>
+                        <p class="text-sm">JavaScript implementation</p>
                     </div>
                 </div>
-                
-                <div class="mb-6">
-                    <textarea
-                        rows="5"
-                        name="message"
-                        placeholder="Your Message"
-                        class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F4AC45]"
-                        required
-                    ></textarea>
-                </div>
+                <!-- Add other project cards similarly -->
+            </div>
+        </div>
 
+        <!-- Contact Section -->
+        <div id="contact" class="w-full px-5 md:px-[12%] py-20 scroll-mt-20 bg-[#272932]/90">
+            <h2 class="text-center text-3xl md:text-5xl text-white">Get in touch</h2>
+            <p class="text-center max-w-2xl mx-auto mt-5 mb-12 text-gray-200 px-4">
+                Let's connect! Reach out for collaborations or just say hello.
+            </p>
+            <form class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="w-full p-3 rounded-lg bg-white/90 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F4AC45]"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        class="w-full p-3 rounded-lg bg-white/90 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F4AC45]"
+                    />
+                </div>
+                <textarea
+                    rows="5"
+                    class="w-full p-3 mt-6 rounded-lg bg-white/90 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F4AC45]"
+                    placeholder="Your Message"
+                ></textarea>
                 <button
                     type="submit"
-                    class="w-full sm:w-auto px-8 py-3 bg-[#272932] text-white rounded-lg hover:bg-[#50514F] transition-colors duration-300 flex items-center justify-center gap-2"
+                    class="mt-6 px-8 py-3 bg-[#F4AC45] text-white rounded-lg hover:bg-[#694A38] transition-colors flex items-center gap-2 mx-auto"
                 >
                     Send Message
-                    <img
-                        src="./images/right-arrow-white.png"
-                        alt=""
-                        class="w-4"
-                    />
+                    <img src="./images/right-arrow-white.png" class="w-4" />
                 </button>
             </form>
         </div>
 
-        <!-- Footer (unchanged) -->
-        <div class="mt-20">
-            <!-- Footer content same as before -->
-        </div>
+        <!-- Footer -->
+        <footer class="mt-20 text-center text-white">
+            <img
+                src="https://logos.textgiraffe.com/logos/logo-name/Anuj-designstyle-boots-m.png"
+                alt=""
+                class="w-36 mx-auto mb-4"
+            />
+            <div class="w-max flex items-center gap-2 mx-auto mb-4">
+                <img src="./images/mail_icon_dark.png" class="w-6" />
+                Anujshakya3m@gmail.com
+            </div>
+            <div class="border-t border-gray-400 mx-[10%] py-6">
+                <p class="mb-4">&copy; 2024 Anuj Shakya. All rights reserved.</p>
+                <ul class="flex items-center justify-center gap-6">
+                    <li><a href="https://instagram.com" class="hover:text-[#F4AC45]">Instagram</a></li>
+                    <li><a href="https://github.com" class="hover:text-[#F4AC45]">GitHub</a></li>
+                    <li><a href="https://linkedin.com" class="hover:text-[#F4AC45]">LinkedIn</a></li>
+                </ul>
+            </div>
+        </footer>
 
         <script>
-            // Mobile menu functions
+            // Mobile Menu Functions
             function openMenu() {
                 document.getElementById("sideMenu").style.right = "0";
             }
-
             function closeMenu() {
                 document.getElementById("sideMenu").style.right = "-16rem";
             }
 
-            // Smooth scroll for navigation links
+            // Smooth Scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
