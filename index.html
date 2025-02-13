@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigiz />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body class="overflow-x-hidden font-Outfit  bg-gradient-to-r from-[#694A38] to-[#F4AC45] ">
+
+    <nav id="nav" class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ">
+        <img src="https://logos.textgiraffe.com/logos/logo-name/Anuj-designstyle-boots-m.png" alt="logo"
+            class="w-28 cursor-pointer mr-14" />
+        <ul id="ul"
+            class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-gradient-to-l from-[#694A38] to-[#F4AC45] shadow-sm bg-opacity-50 text-white">
+            <li><a class="hover:text-xl hover:font-serif hover:text-black duration-500" href="#top">Home</a></li>
+            <li><a class="hover:text-xl hover:font-serif hover:text-black duration-500" href="#about">About Me</a></li>
+            <li><a class="hover:text-xl hover:font-serif hover:text-black duration-500" href="#projects">Projects</a>
+            </li>
+            <li><a class="hover:text-xl hover:font-serif hover:text-black duration-500" href="#contact">Contact Me</a>
+            </li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+            <button>
+                <!-- <img
+                        src="./images/moon.png"
+                        class="w-6"
+                    /> -->
+            </button>
+
+            <!-- <a
+                    href="#contact"
+                    class="hidden lg:flex item-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4  bg-[#272932] text-white hover:text-xl hover:font-serif hover:text-gray-500"
+                >
+                    Contact
+                    <img
+                        src="./images/arrow-icon.png"
+                        alt=""
+                        class="w-2 h-2"
+                    />
+                </a> -->
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="images/menu-black.png" alt="" class="w-6" />
+            </button>
+        </div>
+
+        <!-- Mobile view -->
+        <ul id="sideMenu"
+            class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 buttom-0 w-64 z-50 h-screen bg-gradient-to-l from-[#694A38] to-[#F4AC45] transition duration-500 text-white font-serif bg-opacity-60 ">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/close-black.png" class="w-5 cursor-pointer" alt="" />
+            </div>
+
+            <li class="hover:text-[#]"><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header section -->
+    <div class="w-12/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./images/profile-removebg-preview.png" alt="" class="rounded-full w-28 mb-1" />
+
+        <h3 class="flex items-end gap-2 text-l md:text-2xl text-center mb-1 text-white">
+            Hi I'm <span class="text-black font-serif">Anuj Shakya</span>
+            <!-- <img src="./images/hand-icon.png" alt="" class="w-6" /> -->
+        </h3>
+
+        <h1 class="text-2xl sm:text-6xl text-white font-serif lg:text-[66] mb-3">
+            Frontend Web Developer
+        </h1>
+
+        <p
+            class="w-full max-w-3xl md:max-w-2xl sm:max-w-xl mx-auto mb-5 text-black font-serif text-sm md:text-lg lg:text-xl">
+            Hello! I'm Anuj Shakya, a passionate and dedicated WebDeveloper with a keen eye for detail and a love for
+            creating <span
+                class="text-white w-full max-w-3xl md:max-w-2xl sm:max-w-xl mx-auto mb-12 text-sm md:text-lg lg:text-xl font-serif">
+                webDesign,
+                portfolios,
+                games
+                (Based on javascript)
+            </span>,etc. With a strong
+            foundation in <span
+                class="text-white w-full max-w-3xl md:max-w-2xl sm:max-w-xl mx-auto mb-12 text-sm md:text-lg lg:text-xl font-serif">Java,
+                MySQL,
+                Javascript,
+                Linux,
+                HTML,
+                CSS,
+                React,
+                Bootstrap,
+                TailwindCss,
+                Git </span> .I strive to bring innovative and user-friendly
+            solutions to life.
+
+            My portfolio showcases a variety of projects that reflect my commitment to excellence and my ability to
+            adapt to new
+            challenges.
+        </p>
+
+        <div class="flex flex-col sm:flex-row item-center gap-4 mt-4">
+            <a href="#contact"
+                class="px-3 py-2 sm:px-10 sm:py-3 hover:border rounded-full border-white bg-gradient-to-r from-[#50514F] to-[#C3B299] text-white flex items-center gap-2 ">
+                contact me
+                <img src="./images/right-arrow-white.png" class="w-4" />
+            </a>
+
+            <a href="./images/new_cv_Anuj.pdf" download
+                class="px-3 py-2 sm:px-10 sm:py-3 hover:border rounded-full border-white  flex items-center gap-2 bg-gradient-to-r from-[#50514F] to-[#C3B299] text-white">
+                my resume
+                <img src="./images/download-icon.png" class="w-4" />
+            </a>
+        </div>
+    </div>
+
+    <!-- About me -->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center font-mono font-bold text-white mb-2 text-lg">Introduction</h4>
+        <h2 class="text-center font-serif text-bold text-4xl sm:text-5xl">About me</h2>
+
+        <div class="flex w-rull flex-col lg:flex-row items-center gap-20 my-20">
+            <div>
+                <img src="./images/IMG_E6095.JPG" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none" />
+            </div>
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl text-sm md:text-base lg:text-xl font-serif  text-[#100007]">
+                    As a passionate and driven fresher in web development, I bring a solid foundation in modern
+                    technologies like<span class="text-[#DDF2EB]">React, Redux, Tailwind CSS, Bootstrap, and core web
+                        development tools (HTML, CSS, JavaScript).</span> My hands-on experience includes building
+                    interactive projects like a ppy Bird game using vanilla JavaScript, a responsive portfolio website
+                    with Tailwind CSS, and a dynamic TodoList lication showcasing state management and CRUD operations.
+                    Alongside frontend expertise, I’m proficient in Java and well-versed in <span
+                        class="text-white">Data Structures & Algorithms </span>, ensuring efficient problem-solving and
+                    clean code practices. My Linux skills further enhance my adaptability to diverse development
+                    environments. Eager to learn and innovate, I thrive on transforming ideas into functional,
+                    user-centric solutions while continuously expanding my technical horizons. Let’s create something
+                    impactful together!
+                </p>
+
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+                    <li
+                        class="border-[0.5px] mb-5  bg-[#D3D0CB] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration 500 hover:shadow-[4px_4px_0_#424B54]">
+                        <img src="./images/code-icon.png" alt="" class="w-7 mt-3" />
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-800 text-sm">HTML, CSS, Java, Javascript</p>
+                    </li>
+
+                    <li
+                        class="border-[0.5px] mb-5  bg-[#D3D0CB] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration 500 hover:shadow-[4px_4px_0_#424B54]">
+                        <img src="./images/edu-icon.png" alt="" class="w-7 mt-3" />
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-600 text-sm">B.tech (Cse) </p>
+                    </li>
+
+                    <li
+                        class="border-[0.5px] mb-5  bg-[#D3D0CB] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration 500 hover:shadow-[4px_4px_0_#424B54]">
+                        <img src="./images/project-icon.png" alt="" class="w-7 mt-3" />
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-600 text-sm">TodoList ,Calculator ,Portfolio ,flappyBird ,Guessing Game ,Web
+                            Chat Application </p>
+                    </li>
+                </ul>
+
+                <h4 class="my-6 text-lg font-bold font-serif text-black ">Tools i use</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-2xl cursor-pointer hover:-translate-y-1 duration 500 bg-[#D3D0CB]">
+                        <img src="./images/vscode.png" alt="" class="w-5 sm:w-7" />
+                    </li>
+
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-2xl cursor-pointer hover:-translate-y-1 duration 500 bg-[#D3D0CB]">
+                        <img src="./images/firebase.png" alt="" class="w-5 sm:w-7" />
+                    </li>
+
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-2xl cursor-pointer hover:-translate-y-1 duration 500 bg-[#D3D0CB]">
+                        <img src="./images/mongodb.png" alt="" class="w-5 sm:w-7" />
+                    </li>
+
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-2xl cursor-pointer hover:-translate-y-1 duration 500 bg-[#D3D0CB]">
+                        <img src="./images/figma.png" alt="" class="w-5 sm:w-7" />
+                    </li>
+
+                    <li
+                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-2xl cursor-pointer hover:-translate-y-1 duration 500 bg-[#D3D0CB]">
+                        <img src="./images/git.png" alt="" class="w-5 sm:w-7" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="w-full px-[12%] py-10 scroll-mt-20">
+
+        <h2 class="text-center font-serif text-white text-2xl sm:4xl md:4xl lg:text-5xl">My latest work</h2>
+        <p class="text-center font-serif text-sm md:base lg:text-xl max-w-4xl mx-auto mt-5 mb-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quod. In
+            iusto excepturi facere architecto saepe laborum magni, quisquam sunt!
+        </p>
+
+        <div class="grid grid-cols-auto sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 justify-center gap-6 ">
+            <div
+                class="relative aspect-square w-68 bg-[url('./images/todoss.png')] bg-no-repeat bg-cover bg-center rounded-2xl text-center justify-end cursor-pointer group">
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full mt-28 mb-2 bg-gray">
+                    <a href="https://anuj1012.github.io/TodoList/">
+                      <button class="py-2 px-4 bg-[#3b3b3b] opacity-80 hover:opacity-100 hover:bg-[#181818] duration-500 text-white rounded">
+                        To-Do List
+                      </button>
+                    </a>
+                  </div>
+                  
+            </div>
+
+            <div
+                class="relative aspect-square w-68 bg-[url('./images/flapp.png')] bg-no-repeat bg-cover bg-center rounded-2xl text-center justify-end cursor-pointer group">
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full mt-28 mb-2 bg-gray">
+                    <a href="https://anuj1012.github.io/Flappybird/">
+                    <button class="py-2 px-4 bg-[#3b3b3b] opacity-80 hover:opacity-100 hover:bg-[#181818] duration-500 text-white rounded">Flappy Bird</button>
+                </a>
+                </div>
+            </div>
+
+
+            <div
+                class="relative aspect-square w-68 bg-[url('./images/flapp.png')] bg-no-repeat bg-cover bg-center rounded-2xl text-center justify-end cursor-pointer group">
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full mt-28 mb-2 bg-gray">
+                    <button class="py-2 px-4  bg-[#3b3b3b] opacity-80 hover:opacity-100 hover:bg-[#181818] duration-500 text-white rounded">Flappy Bird</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact"
+        class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg=[length:90%_auto] bg-center">
+        <!-- <h4 class="text-center mb-2 text-lg">My Connect with me</h4> -->
+        <h2 class="text-center text-white text-3xl font-serif  md:text-4xl lg:text-6xl">Get in touch</h2>
+        <p class="text-center text-sm md:text-base lg:text-lg max-w-2xl mx-auto mt-5 mb-12">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quod. In
+            iusto excepturi facere architecto saepe laborum magni, quisquam sunt!
+        </p>
+
+        <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="b0ee5ce6-5beb-40d0-bc22-4e4cb2206b8a">
+            <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name"/>
+
+                <input type="text" placeholder="Enter your email"
+                    class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email"/>
+            </div>
+            <textarea rows="6" name=""
+                class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb"required name="message" ></textarea>
+            <button
+                class="py-1 px-2.5 sm:py-3 sm:px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto mt-7.5 hover:bg-black duration-500">
+                Submit now
+                <img src="./images/right-arrow-white.png" alt="" class="w-4" />
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-20">
+        <div class="text-center">
+            <img src="https://logos.textgiraffe.com/logos/logo-name/Anuj-designstyle-boots-m.png" alt=""
+                class="w-36 mx-auto mb-2" />
+
+            <div class="w-max flex items-center gap-2 mx-auto text-white">
+                <img src="./images/mail_icon_dark.png" alt="" class="w-6 " />
+                Anujshakya3m@gmail.com
+            </div>
+        </div>
+
+        <div
+            class="text-center sm:flex text-whte items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+            <p class="text-white">&copy; 2024 Anuj Shakya . All rights reserved.</p>
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0 text-white">
+                <li><a href="https://instagram.com">Instagram</a></li>
+                <li><a href="https://instagram.com">Github</a></li>
+                <li><a href="https://instagram.com">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
