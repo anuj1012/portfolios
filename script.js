@@ -24,5 +24,3 @@ function closeMenu(){
    document.getElementById('sideMenu').style.right = '-100%';
 };
 
-
-  
