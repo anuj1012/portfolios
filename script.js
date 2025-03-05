@@ -1,6 +1,6 @@
 
 
-// const sideMenu =document.querySelector('#sideMenu');
+const sideMenu =document.querySelector('#sideMenu');
 // const navBar = document.getElementById("nav");
 // const navLinks = document.getElementById("ul");
 
@@ -23,3 +23,6 @@ function openMenu(){
 function closeMenu(){
    document.getElementById('sideMenu').style.right = '-100%';
 };
+
+
+  

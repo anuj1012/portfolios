@@ -6,6 +6,11 @@ tailwind.config = {
         fontFamily:{
             Outfit: ["Outfit","sans-serif"],
             Ovo: ["Ovo","serif"]
-        }
-    }
+        },
+        colors:{
+            darkTheme:'#1101FF'
+        },
+    },
+
+    darkMode: 'selector'
 }
